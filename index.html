@@ -1,50 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dorian Arriaga</title>
-    </head>
-    <body>
-        <main>
-            <h1>Hello World!</h1>
-        </main>
-        <section class="projects" id="projects">
-            <h2 id="project-heading">Projects</h2>
-            <div class="project"><img src="" alt="">
-                <p>Description of tech used</p>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/648ce8e70c.js" crossorigin="anonymous" defer></script>
+    <title>Dorian Arriaga</title>
+</head>
+
+<body>
+    <main class="about" id="about-me">
+        <nav class="nav" id="nav-bar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars-staggered"></i>
+            </label>
+            <label for="" class="nav-logo">Dorian Arriaga</label>
+            <ul>
+                <li><a class="active" href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+        </nav>
+        
+        <h1>About Me!</h1>
+        <h3 class="about-heaed">A passionate, results-driven web developer.</h3>
+        <p class="about-para">I am experienced in developing and deploying interactive web applications, working with back-end and front-end technologies. I also have a solid understanding of coding principles, database design, and software architecture.</p>
+    </main>
+    <section class="projects" id="projects">
+        <img src="https://placehold.co/300x300" alt="">
+        <h2 id="project-heading">Projects</h2>
+        <div class="project"><img src="" alt="">
+            <p>Description of tech used</p>
+        </div>
+        <div class="project"><img src="" alt="">
+            <p>Description of tech used</p>
+        </div>
+        <div class="project"><img src="" alt="">
+            <p>Description of tech used</p>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <h2 id="skill-heading">Skills</h2>
+    </section>
+    <section class="contact-form" id="contact-form">
+        <div class="form">
+            <h3>Contact Form</h3>
+            <label for="">Fullname
+                <input type="text">
+            </label>
+            <br>
+            <label for="">Email
+                <input type="text">
+            </label>
+            <br>
+            <label for="">Message
+                <input type="text">
+            </label>
+            <div class="social-links">
+                <img src="" alt="">
+                <p>Linkedin</p>
+                <img src="" alt="">
+                <p>Github</p>
+                <img src="" alt="">
+                <p>Resume</p>
             </div>
-            <div class="project"><img src="" alt="">
-                <p>Description of tech used</p>
-            </div>
-            <div class="project"><img src="" alt="">
-                <p>Description of tech used</p>
-            </div>
-        </section>
-        <section class="skills" id="skills">
-            <h2 id="skill-heading">Skills</h2>
-        </section>
-        <section class="contact-form" id="contact-form">
-            <div class="form">
-                <h3>Contact Form</h3>
-                <label for="">Fullname
-                    <input type="text">
-                </label>
-                <br>
-                <label for="">Email
-                    <input type="text">
-                </label>
-                <br>
-                <label for="">Message
-                    <input type="text">
-                </label>
-                <div class="social-links">
-                    <img src="" alt=""><p>Linkedin</p>
-                    <img src="" alt=""><p>Github</p>
-                    <img src="" alt=""><p>Resume</p>
-                </div>
-            </div>
-        </section>
-    </body>
+        </div>
+    </section>
+</body>
+
 </html>

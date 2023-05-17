@@ -149,7 +149,7 @@ label.nav-logo {
 
 .project-section{
     margin-top: 50px;
-    height: 25vh;
+    height: 500px;
 }
 
 div.projects{
@@ -226,11 +226,13 @@ p.project-desc{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 25vh;
+    height: 100vh;
+    margin-bottom: 50px;
 }
 
 .skill-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .skill-container img{
@@ -373,6 +375,23 @@ textarea.input{
     transform: translateY(0);
 }
 
+.btn{
+    padding: 0.6rem 1.3rem;
+    background-color: white;
+    border: 3px solid brown;
+    font-size: 1rem;
+    color: brown;
+    line-height: 1;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: white;
+}
 
 /* media query */
 

@@ -22,9 +22,20 @@ inputs.forEach(input => {
 const navLinks = document.querySelectorAll('.nav-link');
 
 navLinks.forEach(link => {
-    link.addEventListener('click', () =>{
+    link.addEventListener('click', function(){
         navLinks.forEach(link => link.classList.remove('active'));
 
         this.classList.add('active');
     })
 })
+
+window.onresize = function() {
+    let icon = document.getElementById("social-icon");
+    if (window.innerWidth <= 480) {
+      icon.classList.remove("fa-2xl");
+      icon.classList.add("fa-sm");
+    } else {
+      icon.classList.remove("fa-sm");
+      icon.classList.add("fa-2xl");
+    }
+  };
